@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modura | Scheduled System Maintenance</title>
+  <meta name="description" content="Modura Commercial Portal is currently undergoing scheduled infrastructure updates to enhance CAD and B2B ordering performance.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Shared Common CSS -->
+  <link rel="stylesheet" href="common.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION (Same Color as Footer)
+       =================================================================== -->
+  <header class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo with Custom Icon -->
+        <a href="index.html" class="brand-logo" title="Modura Commercial Office Furnishings">
+          <div class="brand-icon-box">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <div class="brand-text-group">
+            <span class="brand-name">MODURA<span>.</span></span>
+            <span class="brand-sub">Contract Manufacturer</span>
+          </div>
+        </a>
+
+        <!-- Navigation Menu Links & Home Dropdown -->
+        <ul class="nav-menu">
+          <!-- Dropdown for Home 1 & Home 2 -->
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" aria-haspopup="true">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Home 1: Executive Suites</span>
+                  <span class="dropdown-desc">Corporate boardrooms & prestige workspaces</span>
+                </div>
+              </a>
+              <a href="home-agile.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shapes"></i></div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Home 2: Agile Workspaces</span>
+                  <span class="dropdown-desc">Modular benching & acoustic team hubs</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products by Type</a>
+          </li>
+          <li class="nav-item">
+            <a href="bulk-orders.html" class="nav-link">Bulk Orders & B2B</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact & Quote</a>
+          </li>
+        </ul>
+
+        <!-- Nav Action Buttons: RTL/LTR Icon, Dark/Light Icon -->
+        <div class="nav-actions">
+          <button id="rtlToggle" class="nav-icon-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle RTL / LTR Direction">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button id="themeToggle" class="nav-icon-btn" title="Toggle Dark / Light Theme" aria-label="Toggle Dark / Light Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-solid fa-phone"></i> Emergency Desk
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       MAIN MAINTENANCE CONTENT
+       =================================================================== -->
+  <main style="flex: 1; display: flex; align-items: center; padding: 4.5rem 0; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);">
+    <div class="container text-center" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      
+      <!-- Maintenance Badge -->
+      <div class="section-badge" style="background: rgba(245, 158, 11, 0.15); color: var(--color-warning); border-color: rgba(245, 158, 11, 0.35); margin-bottom: 1.5rem;">
+        <i class="fa-solid fa-triangle-exclamation"></i> Scheduled Infrastructure Upgrade
+      </div>
+
+      <!-- Icon & Headline -->
+      <div style="width: 90px; height: 90px; border-radius: 50%; background: rgba(217, 119, 6, 0.12); color: var(--color-primary); font-size: 2.75rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
+        <i class="fa-solid fa-gear fa-spin" style="--fa-animation-duration: 10s;"></i>
+      </div>
+
+      <h1 style="margin-bottom: 1rem;">Factory Specifier Portal Under Maintenance</h1>
+      <p class="lead" style="margin-bottom: 2rem;">
+        We are upgrading our real-time 3D CAD rendering cluster and automated ERP inventory database to serve your contract procurements faster. Service will resume shortly.
+      </p>
+
+      <!-- ETA Countdown Timer Box -->
+      <div class="card" style="padding: 2rem; max-width: 600px; margin: 0 auto 2.5rem auto;">
+        <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 1rem;">
+          Estimated Time Remaining Until Full Service Resumes
+        </div>
+        
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1rem 1.5rem; min-width: 90px;">
+            <div id="mHours" style="font-size: 2.25rem; font-weight: 800; color: var(--color-primary);">02</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Hours</div>
+          </div>
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1rem 1.5rem; min-width: 90px;">
+            <div id="mMinutes" style="font-size: 2.25rem; font-weight: 800; color: var(--color-primary);">44</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Minutes</div>
+          </div>
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1rem 1.5rem; min-width: 90px;">
+            <div id="mSeconds" style="font-size: 2.25rem; font-weight: 800; color: var(--color-primary);">18</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Seconds</div>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div style="margin-top: 1.75rem;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 0.4rem;">
+            <span>Database Migration & ERP Sync</span>
+            <span>78% Complete</span>
+          </div>
+          <div style="width: 100%; height: 8px; background-color: var(--border-color); border-radius: 999px; overflow: hidden;">
+            <div style="width: 78%; height: 100%; background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-warning) 100%);"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Urgent Commercial Assistance -->
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 2rem;">
+        <h4 style="margin-bottom: 0.5rem;"><i class="fa-solid fa-phone-volume" style="color: var(--color-primary);"></i> Urgent Contract Bid or Order Placement?</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Our direct commercial procurement desk remains fully operational via phone and priority email.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="tel:+18005556638" class="btn btn-secondary">
+            <i class="fa-solid fa-phone"></i> +1 (800) 555-MODURA
+          </a>
+          <a href="mailto:procurement@modurafurniture.com" class="btn btn-secondary">
+            <i class="fa-solid fa-envelope"></i> procurement@modurafurniture.com
+          </a>
+        </div>
+      </div>
+
+      <!-- Action Links -->
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary">
+          <i class="fa-solid fa-house"></i> Return to Home 1
+        </a>
+        <a href="home-agile.html" class="btn btn-secondary">
+          <i class="fa-solid fa-shapes"></i> Go to Agile Workspaces
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER (Exact Same Colour as Navbar: --nav-footer-bg)
+       =================================================================== -->
+  <footer class="footer-wrapper">
+    <div class="container footer-top" style="padding: 3rem 0 2rem 0;">
+      <div class="footer-grid">
+        <!-- Footer Column 1: Brand Logo & About -->
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" title="Modura Office Systems">
+            <div class="brand-icon-box">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <div class="brand-text-group">
+              <span class="brand-name">MODURA<span>.</span></span>
+              <span class="brand-sub">Contract Manufacturer</span>
+            </div>
+          </a>
+          <p>
+            Global designer, manufacturer, and contract supplier of heavy-duty executive office furniture, modular workstation systems, and acoustic architectural hubs.
+          </p>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home 1: Executive Suites</a></li>
+            <li><a href="home-agile.html"><i class="fa-solid fa-angle-right"></i> Home 2: Agile Workspaces</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Products by Type</a></li>
+            <li><a href="bulk-orders.html"><i class="fa-solid fa-angle-right"></i> Bulk Orders & B2B</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Contact Channels -->
+        <div>
+          <h4 class="footer-title">Immediate Help</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Department Desk</a></li>
+            <li><a href="coming-soon.html"><i class="fa-solid fa-angle-right"></i> NeoErgo 2027 Line</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Factory Status -->
+        <div>
+          <h4 class="footer-title">Facility Status</h4>
+          <div style="font-size: 0.85rem; color: var(--nav-footer-subtext); margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-circle" style="color: var(--color-success); font-size: 0.6rem;"></i> Manufacturing Plant: Fully Operational
+          </div>
+          <div style="font-size: 0.85rem; color: var(--nav-footer-subtext);">
+            <i class="fa-solid fa-circle" style="color: var(--color-warning); font-size: 0.6rem;"></i> Portal ERP: Maintenance Mode
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Strip -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; <span id="currentYear">2026</span> Modura Commercial Office Systems Inc. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Security Updates</a>
+          <a href="#">System Status</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Common JavaScript -->
+  <script src="common.js"></script>
+
+  <!-- Live Countdown Timer Simulation -->
+  <script>
+    let hours = 2, minutes = 44, seconds = 18;
+    const hEl = document.getElementById('mHours');
+    const mEl = document.getElementById('mMinutes');
+    const sEl = document.getElementById('mSeconds');
+
+    setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+      } else {
+        seconds = 59;
+        if (minutes > 0) {
+          minutes--;
+        } else {
+          minutes = 59;
+          if (hours > 0) hours--;
+        }
+      }
+
+      if (hEl) hEl.textContent = String(hours).padStart(2, '0');
+      if (mEl) mEl.textContent = String(minutes).padStart(2, '0');
+      if (sEl) sEl.textContent = String(seconds).padStart(2, '0');
+    }, 1000);
+  </script>
+</body>
+</html>

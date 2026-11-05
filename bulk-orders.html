@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexor | Enterprise Bulk Orders & Wholesale Commercial Procurement</title>
+  <meta name="description" content="Modura Bulk Orders: Factory-direct wholesale pricing tiers, turnkey white-glove installation, CAD space planning, and GSA-compliant procurement for commercial enterprises.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.png">
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Shared Common CSS -->
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION (Same Color as Footer)
+       =================================================================== -->
+  <header class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo with Circular Icon Badge (Matching Reference) -->
+           <a href="index.html" class="navbar-brand">
+    <img src="assets/images/logo.png" alt="NEXOR Logo" class="site-logo">
+</a>
+            <div class="brand-text-group">
+              <span class="brand-name">NEXOR<span></span></span>
+              <span class="brand-sub">Contract Manufacturer</span>
+            </div>
+          </a>
+
+        <!-- Navigation Menu Links & Home Dropdown -->
+        <ul class="nav-menu">
+          <!-- Dropdown for Home 1 & Home 2 -->
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" aria-haspopup="true">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Home 1: Executive Suites</span>
+                  <span class="dropdown-desc">Corporate boardrooms & prestige workspaces</span>
+                </div>
+              </a>
+              <a href="home-agile.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shapes"></i></div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Home 2: Agile Workspaces</span>
+                  <span class="dropdown-desc">Modular benching & acoustic team hubs</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products </a>
+          </li>
+          <li class="nav-item">
+            <a href="bulk-orders.html" class="nav-link active">Bulk Orders & B2B</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact </a>
+          </li>
+          
+        </ul>
+
+        <!-- Nav Action Buttons: RTL/LTR Icon, Dark/Light Icon, RFQ CTA -->
+        <div class="nav-actions">
+          <!-- Dark to Light Mode Button with Moon Icon (As in user image) -->
+          <button id="themeToggle" class="nav-icon-btn" title="Toggle Dark / Light Theme" aria-label="Toggle Dark / Light Theme">
+            <svg class="icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <!-- RTL to LTR Button with Dual Arrows Icon (Matching user image) -->
+          <button id="rtlToggle" class="nav-icon-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle RTL / LTR Direction">
+            <svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 7h16"></path>
+              <path d="M15 3l5 4-5 4"></path>
+              <path d="M20 17H4"></path>
+              <path d="M9 13l-5 4 5 4"></path>
+            </svg>
+          </button>
+
+          <!-- 3. Pill Button: View → (As shown in screenshot) -->
+          <button class="btn btn-pill-nav open-quote-modal" title="Request Commercial Quote">
+    <span>QUOTE</span>
+</button>
+
+          <!-- 4. Circular Hamburger Button: ≡ (As shown in screenshot) -->
+          <button id="mobileMenuToggle" class="nav-icon-btn nav-hamburger-btn" aria-label="Open Navigation Menu">
+            <svg class="hamburger-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line class="line-1" x1="4" y1="7" x2="20" y2="7"></line>
+              <line class="line-2" x1="4" y1="12" x2="20" y2="12"></line>
+              <line class="line-3" x1="4" y1="17" x2="20" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       SECTION 1: BULK ORDERS HERO - FACTORY DIRECT PROCUREMENT
+       =================================================================== -->
+  <section class="section" style="padding: 5rem 0 4rem 0; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <div class="section-badge">
+            <i class="fa-solid fa-warehouse"></i> Enterprise Commercial Supply
+          </div>
+          <h1>Factory-Direct Bulk Procurement For Commercial Outfits.</h1>
+          <p class="lead">
+            Eliminate dealer markups. Source directly from our automated robotic manufacturing facility with guaranteed volume rebates, dedicated project engineers, and nationwide white-glove union installation.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem 0;">
+            <a href="#bulk-calculator" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-calculator"></i> Savings Calculator
+            </a>
+            <a href="#bulk-rfq" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-file-invoice"></i> Submit B2B Tender
+            </a>
+          </div>
+          <div style="display: flex; gap: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem; flex-wrap: wrap;">
+            <div>
+              <div style="font-size: 1.6rem; font-weight: 800; color: var(--color-primary);">Up to 32%</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Tiered Volume Savings</div>
+            </div>
+            <div>
+              <div style="font-size: 1.6rem; font-weight: 800; color: var(--color-primary);">48-Hour</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">CAD Layout Delivery</div>
+            </div>
+            <div>
+              <div style="font-size: 1.6rem; font-weight: 800; color: var(--color-primary);">Zero-Damage</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Crated Freight Guarantee</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80" alt="Bulk Commercial Furniture Warehouse and Shipping" style="width: 100%; height: 460px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 2: ENTERPRISE TIER DISCOUNT MATRIX
+       =================================================================== -->
+  <section class="section section-alt" id="tiers">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-layer-group"></i> Wholesale Tiers</div>
+        <h2>Commercial Volume Pricing Schedules</h2>
+        <p class="lead">Transparent procurement pricing built specifically for general contractors, corporate interior architects, and enterprise facility buyers.</p>
+      </div>
+
+      <div class="grid-4">
+        <!-- Tier 1 -->
+        <div class="card" style="padding: 1.75rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted);">Tier 1</div>
+          <h4 style="margin: 0.5rem 0;">10 – 25 Workstations</h4>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem;">50% Wholesale Base</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Direct factory pricing 18% lower than standard retail dealer networks.</p>
+          <ul class="product-features-list" style="margin-bottom: 1.5rem;">
+            <li><i class="fa-solid fa-check"></i> Standard freight dock drop</li>
+            <li><i class="fa-solid fa-check"></i> 48-Hour Fast-Ship stock</li>
+            <li><i class="fa-solid fa-check"></i> 12-Year commercial warranty</li>
+          </ul>
+          <button class="btn btn-sm btn-secondary open-quote-modal" data-product="Bulk Tier 1 (10-25 Units)" style="width: 100%;">
+            Inquire Tier 1
+          </button>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="card" style="padding: 1.75rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted);">Tier 2</div>
+          <h4 style="margin: 0.5rem 0;">26 – 75 Workstations</h4>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem;">12% Additional Rebate</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Ideal for mid-sized floorplate buildouts and regional satellite expansions.</p>
+          <ul class="product-features-list" style="margin-bottom: 1.5rem;">
+            <li><i class="fa-solid fa-check"></i> Free 2D/3D CAD space plans</li>
+            <li><i class="fa-solid fa-check"></i> Tailored delivery phasing</li>
+            <li><i class="fa-solid fa-check"></i> Custom top finish options</li>
+          </ul>
+          <button class="btn btn-sm btn-secondary open-quote-modal" data-product="Bulk Tier 2 (26-75 Units)" style="width: 100%;">
+            Inquire Tier 2
+          </button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="card" style="padding: 1.75rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted);">Tier 3: Enterprise</div>
+          <h4 style="margin: 0.5rem 0;">76 – 200 Workstations</h4>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem;">22% Volume Rebate</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Full headquarters fitouts. Includes dedicated on-site project superintendent.</p>
+          <ul class="product-features-list" style="margin-bottom: 1.5rem;">
+            <li><i class="fa-solid fa-check"></i> Turnkey white-glove assembly</li>
+            <li><i class="fa-solid fa-check"></i> Free finish swatch delivery</li>
+            <li><i class="fa-solid fa-check"></i> Custom power & AV routing</li>
+          </ul>
+          <button class="btn btn-sm btn-secondary open-quote-modal" data-product="Bulk Tier 3 (76-200 Units)" style="width: 100%;">
+            Inquire Tier 3
+          </button>
+        </div>
+
+        <!-- Tier 4 -->
+        <div class="card" style="padding: 1.75rem;">
+          <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted);">Tier 4: Campus</div>
+          <h4 style="margin: 0.5rem 0;">200+ Workstations</h4>
+          <div style="font-size: 1.75rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.75rem;">32% Max Contract</div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Multi-building campus master contracts and government / institutional tenders.</p>
+          <ul class="product-features-list" style="margin-bottom: 1.5rem;">
+            <li><i class="fa-solid fa-check"></i> Direct ocean/rail container</li>
+            <li><i class="fa-solid fa-check"></i> Bespoke RAL powder-coating</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated GSA & Contract team</li>
+          </ul>
+          <button class="btn btn-sm btn-secondary open-quote-modal" data-product="Bulk Tier 4 (200+ Units)" style="width: 100%;">
+            Inquire Campus
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 3: 6-STAGE TURNKEY DELIVERY & INSTALLATION ROADMAP
+       =================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-route"></i> Project Execution</div>
+        <h2>6-Stage Turnkey Commercial Execution Roadmap</h2>
+        <p class="lead">From initial architectural blueprint review through to white-glove assembly and sign-off, our commercial project management ensures zero site delays.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">01</div>
+          <h4>Discovery & Blueprint Audit</h4>
+          <p style="font-size: 0.9rem;">We review your CAD DWG or PDF architectural drawings to verify building columns, core electrical trench locations, and local egress code compliance.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">02</div>
+          <h4>3D Test-Fits & Verification</h4>
+          <p style="font-size: 0.9rem;">We provide full-color 3D axonometric renderings and deliver physical material swatch boxes to ensure client stakeholder alignment before manufacturing.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">03</div>
+          <h4>Robotic CNC Production</h4>
+          <p style="font-size: 0.9rem;">Orders enter our automated production line. Laser-cut steel and FSC wood cores are fabricated with sub-millimeter precision and 100% QA cycle testing.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">04</div>
+          <h4>Phased Dedicated Logistics</h4>
+          <p style="font-size: 0.9rem;">We schedule freight arrivals synchronized with your general contractor’s flooring and ceiling for the trades, preventing congested elevator bays.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">05</div>
+          <h4>Union White-Glove Installation</h4>
+          <p style="font-size: 0.9rem;">Certified technicians assemble all frames, route internal cable spines, test sit-stand motor electronics, and remove all protective packaging.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">06</div>
+          <h4>Punch-List Sign-Off & Warranty</h4>
+          <p style="font-size: 0.9rem;">On-site walkthrough with your facilities team, immediate rectification of any minor punch-list items, and issuance of the 12-Year Commercial Master Warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 4: COMPLIMENTARY 3D CAD & SPACE PLANNING SERVICES
+       =================================================================== -->
+  <section class="section section-alt" id="cad">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <div class="section-badge"><i class="fa-solid fa-pen-nib"></i> Architectural Service</div>
+          <h2>Free 2D/3D Space Planning & CAD Test-Fits</h2>
+          <p class="lead">Unsure how many sit-stand benching clusters will fit comfortably into your floorplate while respecting ADA corridors and fire exits?</p>
+          <p>
+            Modura interior architects produce detailed 2D furniture layouts, circulation heatmaps, and high-resolution 3D photorealistic perspective renderings at zero charge for qualified commercial projects over 25 workstations.
+          </p>
+          <ul class="product-features-list" style="margin: 1.5rem 0;">
+            <li><i class="fa-solid fa-check"></i> 48-Hour turnaround for initial 2D furniture space plan</li>
+            <li><i class="fa-solid fa-check"></i> Power drop & floor-box coordination recommendations</li>
+            <li><i class="fa-solid fa-check"></i> Acoustic absorption calculations for open ceilings</li>
+          </ul>
+          <button class="btn btn-primary open-quote-modal" data-product="Free CAD Space Planning Service">
+            <i class="fa-solid fa-cloud-arrow-up"></i> Upload Floorplan For Free Plan
+          </button>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Architectural 3D CAD Floorplan Rendering" style="width: 100%; height: 440px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 5: GSA SCHEDULE, GOVERNMENT & EDUCATION COMPLIANCE
+       =================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-building-flag"></i> Government & Institutional</div>
+        <h2>GSA Schedule & Public Sector Contract Purchasing</h2>
+        <p class="lead">Modura maintains active contract schedules for municipal governments, federal agencies, higher education campuses, and healthcare networks.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card" style="text-align: center;">
+          <i class="fa-solid fa-landmark" style="font-size: 2.25rem; color: var(--color-primary); margin-bottom: 1rem;"></i>
+          <h4>GSA Contract Schedule 71</h4>
+          <p style="font-size: 0.9rem;">Pre-negotiated federal pricing schedules, verified Buy American Act (BAA) and TAA compliant product lines.</p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          <i class="fa-solid fa-graduation-cap" style="font-size: 2.25rem; color: var(--color-accent); margin-bottom: 1rem;"></i>
+          <h4>Higher Education Purchasing</h4>
+          <p style="font-size: 0.9rem;">Heavy-duty classroom furniture, library focus pods, and faculty office suites with institutional durability.</p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          <i class="fa-solid fa-hospital" style="font-size: 2.25rem; color: var(--color-success); margin-bottom: 1rem;"></i>
+          <h4>Healthcare Administration</h4>
+          <p style="font-size: 0.9rem;">Anti-microbial bleach-cleanable laminates, medical-grade vinyls, and ergonomic nursing administrative stations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 6: GLOBAL FLEET & ZERO-DAMAGE CRATING LOGISTICS
+       =================================================================== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-2">
+        <div style="order: 2;">
+          <div class="section-badge"><i class="fa-solid fa-truck-moving"></i> Logistics Protection</div>
+          <h2>Zero-Damage Heavy-Duty Crating & Dedicated Fleet</h2>
+          <p class="lead">Commercial furniture is useless if it arrives with scratched edges or bent metal frames. We protect every single component with engineered honeycomb edge guards and custom wooden pallets.</p>
+          
+          <div style="margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; gap: 1rem;">
+              <i class="fa-solid fa-box" style="color: var(--color-primary); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+              <div>
+                <strong>3-Layer Reinforced Honeycomb Packaging:</strong> Protects chamfered wooden tops against forklift impacts and handling drops.
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+              <i class="fa-solid fa-location-crosshairs" style="color: var(--color-primary); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+              <div>
+                <strong>GPS-Tracked Dedicated Truckloads:</strong> No sorting terminals or mid-route transfers. Freight moves directly from factory bay to client site.
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+              <i class="fa-solid fa-recycle" style="color: var(--color-primary); font-size: 1.25rem; margin-top: 0.2rem;"></i>
+              <div>
+                <strong>100% Recyclable Cardboard & Strapping:</strong> Modura installation crews haul away and recycle all packaging materials immediately.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="order: 1;">
+          <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80" alt="Global Shipping and Logistics Fleet" style="width: 100%; height: 420px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 7: INTERACTIVE BULK ORDER COST & SAVINGS CALCULATOR
+       =================================================================== -->
+  <section class="section" id="bulk-calculator">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-coins"></i> Margin Analysis</div>
+        <h2>Factory Direct vs Dealer Pricing Comparison</h2>
+        <p class="lead">See exactly how much your organization saves by eliminating traditional commercial furniture dealership commissions.</p>
+      </div>
+
+      <div class="card" style="max-width: 900px; margin: 0 auto; padding: 2.5rem; background-color: var(--bg-card);">
+        <div class="grid-2" style="margin-bottom: 2rem;">
+          <div class="form-group">
+            <label class="form-label">Total Workstations / Desks Required:</label>
+            <input type="number" id="bulkCountInput" class="form-control" value="80" min="10" max="1500" step="10">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Select Furniture Grade:</label>
+            <select id="bulkGradeInput" class="form-control">
+              <option value="standard">Core Agile Benching & Mesh Chairs</option>
+              <option value="executive" selected>Executive Motorized Desks & Ergonomic Task Seating</option>
+              <option value="premium">Architectural Hardwood Systems & Leather Seating</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Comparative Output Grid -->
+        <div class="grid-3" style="margin-bottom: 2rem;">
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
+            <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Traditional Retail Dealer</div>
+            <div id="dealerPriceOutput" style="font-size: 2rem; font-weight: 800; color: var(--text-muted); text-decoration: line-through; margin: 0.5rem 0;">
+              $144,000
+            </div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">Includes 35-40% dealer markup</div>
+          </div>
+
+          <div style="background-color: rgba(217, 119, 6, 0.08); border: 2px solid var(--color-primary); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
+            <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-primary);">Nexor Direct Price</div>
+            <div id="moduraPriceOutput" style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin: 0.5rem 0;">
+              $97,920
+            </div>
+            <div style="font-size: 0.8rem; color: var(--color-success); font-weight: 700;">Includes 22% Volume Rebate</div>
+          </div>
+
+          <div style="background-color: rgba(16, 185, 129, 0.08); border: 1px solid var(--color-success); border-radius: var(--radius-md); padding: 1.5rem; text-align: center;">
+            <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--color-success);">Net Client Capital Saved</div>
+            <div id="savingsOutput" style="font-size: 2rem; font-weight: 800; color: var(--color-success); margin: 0.5rem 0;">
+              $46,080
+            </div>
+            <div style="font-size: 0.8rem; color: var(--color-success); font-weight: 700;">Direct Capital Conservation</div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <button class="btn btn-primary btn-lg open-quote-modal" data-product="Bulk Order Volume Calculation">
+            <i class="fa-solid fa-file-invoice"></i> Lock In Factory Direct Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 8: COMMERCIAL INDUSTRY VERTICALS
+       =================================================================== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-briefcase"></i> Specialized Sectors</div>
+        <h2>Tailored Solutions By Industry Vertical</h2>
+        <p class="lead">Different sectors possess distinct acoustic, durability, and technological demands. Modura configures systems specifically for each operational domain.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="card">
+          <div style="font-size: 1.75rem; color: var(--color-primary); margin-bottom: 0.75rem;"><i class="fa-solid fa-laptop-code"></i></div>
+          <h4>Technology & AI Campuses</h4>
+          <p style="font-size: 0.88rem;">Dual-monitor heavy arms, high-density power conduits for high-spec workstations, and acoustic coding pods.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 1.75rem; color: var(--color-accent); margin-bottom: 0.75rem;"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h4>Legal & Professional Services</h4>
+          <p style="font-size: 0.88rem;">Acoustic soundproof office pods, lockable credenzas with RFID access control, and prestige boardroom tables.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 1.75rem; color: var(--color-success); margin-bottom: 0.75rem;"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Trading & Financial Centers</h4>
+          <p style="font-size: 0.88rem;">Heavy-load 4-motor sit-stand benching supporting multi-screen arrays, and heat-dissipating perforated panels.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 1.75rem; color: var(--color-warning); margin-bottom: 0.75rem;"><i class="fa-solid fa-building-user"></i></div>
+          <h4>Co-Working Operators</h4>
+          <p style="font-size: 0.88rem;">Hyper-durable scratch-proof surfaces, rapid tool-free reconfigurable benching pods, and mobile soft seating blocks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       SECTION 9: DEDICATED B2B BULK RFQ / TENDER FORM
+       =================================================================== -->
+  <section class="section" id="bulk-rfq" style="background: linear-gradient(135deg, #0c1322 0%, #17243c 100%); color: #ffffff;">
+    <div class="container">
+      <div class="card" style="max-width: 960px; margin: 0 auto; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); padding: 3rem;">
+        <div style="text-align: center; margin-bottom: 2.5rem;">
+          <span class="section-badge" style="background: rgba(217, 119, 6, 0.2); color: #f59e0b; border-color: rgba(217, 119, 6, 0.4);">
+            <i class="fa-solid fa-handshake-angle"></i> Commercial Contract Desk
+          </span>
+          <h2 style="color: #ffffff; margin-top: 0.5rem;">Submit Enterprise Bulk RFQ or Bid Invitation</h2>
+          <p style="color: #cbd5e1; max-width: 680px; margin: 0 auto;">
+            Our senior commercial estimating engineers provide formal itemized contract quotes, BAA compliance paperwork, and CAD test-fit layout within 24 hours.
+          </p>
+        </div>
+
+        <form class="ajax-rfq-form">
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Lead Contact Name *</label>
+              <input type="text" class="form-control" required placeholder="e.g. Robert Sterling" style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;">
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Enterprise / Contracting Entity *</label>
+              <input type="text" class="form-control" required placeholder="e.g. Apex Global Development Ltd" style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;">
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Direct Business Email *</label>
+              <input type="email" class="form-control" required placeholder="r.sterling@apex.com" style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;">
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Direct Telephone / Mobile</label>
+              <input type="tel" class="form-control" placeholder="+1 (555) 234-5678" style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;">
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Estimated Project Timeline</label>
+              <select class="form-control" style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;">
+                <option>Immediate / Fast-Ship (Under 3 Weeks)</option>
+                <option>30 - 60 Days</option>
+                <option>60 - 90 Days</option>
+                <option>Q3/Q4 Master Procurement</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Project Scope / Quantity</label>
+              <select class="form-control" style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;">
+                <option>25 - 50 Workstations + Chairs</option>
+                <option>51 - 100 Workstations + Boardrooms</option>
+                <option>101 - 250 Workstations Full Campus</option>
+                <option>250+ Master Contract Procurement</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Installation Services Needed</label>
+              <select class="form-control" style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;">
+                <option>Turnkey Union White-Glove Installation</option>
+                <option>Dock Freight Delivery Only</option>
+                <option>Phased Multi-Floor Staged Delivery</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: #cbd5e1;">Project Specifications & Floorplan Details</label>
+            <textarea class="form-control" placeholder="Provide details regarding finishes, floor level, building loading dock restrictions, or paste a link to your cloud CAD files..." style="background: rgba(12, 19, 34, 0.7); border-color: #334155; color: #ffffff;"></textarea>
+          </div>
+
+          <div style="text-align: center; margin-top: 1rem;">
+            <button type="submit" class="btn btn-primary btn-lg" style="min-width: 280px;">
+              <i class="fa-solid fa-paper-plane"></i> Submit Commercial Tender RFQ
+            </button>
+            <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 0.75rem;">
+              <i class="fa-solid fa-lock"></i> All submitted blueprints and plans are protected under strict commercial Non-Disclosure Agreements (NDA).
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER (Exact Same Colour as Navbar: --nav-footer-bg)
+       =================================================================== -->
+ <!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<footer class="nexor-footer">
+
+    <style>
+        /* ==============================
+           NEXOR FOOTER MAIN
+        ============================== */
+
+        .nexor-footer {
+            background: #101923;
+            color: #b7c8dc;
+            font-family: Arial, sans-serif;
+            width: 100%;
+        }
+
+        .nexor-footer * {
+            box-sizing: border-box;
+        }
+
+        .footer-top {
+            max-width: 1400px;
+            margin: auto;
+            padding: 65px 20px 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
+            gap: 45px;
+        }
+
+
+        /* ==============================
+           BRAND LOGO AND NAME
+        ============================== */
+
+        .footer-about .brand-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 42px;
+            text-decoration: none;
+            margin-bottom: 25px;
+        }
+
+        .footer-brand-logo {
+            width: 102px;
+            height: 68px;
+            padding: 5px;
+            object-fit: contain;
+            background: #fff;
+            display: block;
+        }
+
+        .brand-text-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .brand-name {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .brand-sub {
+            color: #b7c8dc;
+            font-size: 13px;
+            letter-spacing: 1.2px;
+            white-space: nowrap;
+            margin-top: 4px;
+        }
+
+
+        /* ==============================
+           ABOUT TEXT
+        ============================== */
+
+        .footer-about p {
+            color: #b7c8dc;
+            font-size: 15px;
+            line-height: 1.85;
+            margin: 0 0 22px;
+            max-width: 380px;
+        }
+
+
+        /* ==============================
+           SOCIAL MEDIA
+        ============================== */
+
+        .footer-socials {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .footer-socials a {
+            width: 42px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1b293d;
+            border: 1px solid #465267;
+            border-radius: 7px;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer-socials a:hover {
+            background: #e88900;
+            border-color: #e88900;
+            color: #fff;
+            transform: translateY(-4px);
+        }
+
+
+        /* ==============================
+           FOOTER HEADINGS
+        ============================== */
+
+        .footer-title {
+            color: #fff;
+            font-size: 19px;
+            font-weight: 700;
+            margin: 0 0 27px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .footer-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 38px;
+            height: 3px;
+            background: #e88900;
+        }
+
+
+        /* ==============================
+           FOOTER LINKS
+        ============================== */
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 17px;
+        }
+
+        .footer-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 13px;
+            color: #b7c8dc;
+            font-size: 15px;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .footer-links a i {
+            color: #e88900;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: #e88900;
+            padding-left: 5px;
+        }
+
+
+        /* ==============================
+           CONTACT DETAILS
+        ============================== */
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 22px;
+            color: #b7c8dc;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .footer-contact-item i {
+            color: #e88900;
+            font-size: 16px;
+            margin-top: 4px;
+            min-width: 15px;
+        }
+
+        .footer-contact-item a {
+            color: #b7c8dc;
+            text-decoration: none;
+        }
+
+        .footer-contact-item a:hover {
+            color: #e88900;
+        }
+
+
+        /* ==============================
+           CERTIFICATION BADGES
+        ============================== */
+
+        .footer-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .cert-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 12px;
+            background: #252f3a;
+            border: 1px solid #3c4651;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .cert-badge i {
+            color: #e88900;
+        }
+
+
+        /* ==============================
+           FOOTER BOTTOM
+        ============================== */
+
+        .footer-bottom {
+            border-top: 1px solid #303a45;
+            padding: 22px 20px;
+        }
+
+        .footer-bottom-inner {
+            max-width: 1400px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            font-size: 13px;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-bottom-links a {
+            color: #b7c8dc;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #e88900;
+        }
+
+
+        /* ==============================
+           TABLET RESPONSIVE
+        ============================== */
+
+        @media (max-width: 992px) {
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+
+            .footer-about {
+                grid-column: span 2;
+            }
+
+            .footer-bottom-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-bottom-links {
+                justify-content: center;
+            }
+        }
+
+
+        /* ==============================
+           MOBILE RESPONSIVE
+        ============================== */
+
+        @media (max-width: 576px) {
+
+            .footer-top {
+                padding: 45px 20px 35px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .footer-about {
+                grid-column: span 1;
+            }
+
+            .footer-about .brand-logo {
+                gap: 15px;
+            }
+
+            .footer-brand-logo {
+                width: 75px;
+                height: 55px;
+            }
+
+            .brand-name {
+                font-size: 23px;
+            }
+
+            .brand-sub {
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+
+            .footer-about p {
+                font-size: 14px;
+            }
+
+            .footer-title {
+                font-size: 18px;
+                margin-bottom: 22px;
+            }
+
+            .footer-links a {
+                font-size: 14px;
+            }
+
+            .footer-socials {
+                gap: 9px;
+            }
+
+            .footer-socials a {
+                width: 39px;
+                height: 39px;
+                font-size: 16px;
+            }
+
+            .footer-bottom-inner {
+                font-size: 12px;
+            }
+
+            .footer-bottom-links {
+                gap: 12px;
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+
+    <!-- ==============================
+         FOOTER TOP SECTION
+    ============================== -->
+
+    <div class="footer-top">
+
+        <div class="footer-grid">
+
+
+            <!-- COLUMN 1: BRAND -->
+            <div class="footer-about">
+
+                <a href="index.html"
+                   class="brand-logo"
+                   title="NEXOR Contract Manufacturer">
+
+                    <img src="assets/images/logo.png"
+                         alt="NEXOR Logo"
+                         class="footer-brand-logo">
+
+                    <div class="brand-text-group">
+
+                        <span class="brand-name">NEXOR</span>
+
+                        <span class="brand-sub">
+                            CONTRACT MANUFACTURER
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+                    Global designer, manufacturer, and contract supplier
+                    of heavy-duty executive office furniture, modular
+                    workstation systems, and acoustic architectural hubs.
+                </p>
+
+
+                <!-- SOCIAL MEDIA ICONS -->
+
+                <div class="footer-socials">
+
+                    <a href="https://www.facebook.com/YOUR-PAGE"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Facebook"
+                       title="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="https://www.instagram.com/YOUR-USERNAME/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram"
+                       title="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/company/YOUR-COMPANY/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn"
+                       title="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a href="https://www.youtube.com/@YOUR-CHANNEL"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="YouTube"
+                       title="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+
+                    <a href="https://www.pinterest.com/YOUR-USERNAME/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Pinterest"
+                       title="Pinterest">
+
+                        <i class="fa-brands fa-pinterest-p"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COLUMN 2: PRODUCT TYPES -->
+
+            <div>
+
+                <h4 class="footer-title">Product Types</h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="products.html?type=executive">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Executive Suites
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html?type=benchings">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Motorized Benchings
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html?type=seating">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Ergonomic Task Chairs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html?type=conference">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Boardroom Tables
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html?type=acoustic">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Acoustic Focus Pods
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+            <!-- COLUMN 3: CONTRACT SERVICES -->
+
+            <div>
+
+                <h4 class="footer-title">Contract Services</h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="bulk-orders.html">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Bulk Order Procurement
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="bulk-orders.html#cad">
+                            <i class="fa-solid fa-angle-right"></i>
+                            3D CAD & BIM Library
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="bulk-orders.html#tiers">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Wholesale Volume Tiers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Schedule Showroom Visit
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html?type=reception">
+                            <i class="fa-solid fa-angle-right"></i>
+                            Reception Desks
+                        </a>
+                    </li>
+                  
+
+                </ul>
+
+            </div>
+
+
+            <!-- COLUMN 4: CONTACT -->
+
+            <div>
+
+                <h4 class="footer-title">Manufacturing HQ</h4>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        850 Innovation Parkway, Suite 400,
+                        Chicago, IL 60607
+                    </span>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>
+                        <a href="tel:+13125550199">
+                            +1 (312) 555-0199
+                        </a>
+                    </span>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>
+                        <a href="mailto:info@nexor.com">
+                            info@nexor.com
+                        </a>
+                    </span>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>
+                        Monday - Friday: 8 AM - 6 PM
+                    </span>
+
+                </div>
+
+
+                <!-- CERTIFICATION BADGES -->
+
+                <div class="footer-badges">
+
+                    <span class="cert-badge">
+                        <i class="fa-solid fa-check-double"></i>
+                        BIFMA X5.5
+                    </span>
+
+                    <span class="cert-badge">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        ISO 9001
+                    </span>
+
+                    
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+         FOOTER BOTTOM
+    ============================== -->
+
+    <div class="footer-bottom">
+
+        <div class="footer-bottom-inner">
+
+            <div>
+                &copy; <span id="nexorYear"></span>
+                NEXOR Contract Manufacturer. All Rights Reserved.
+            </div>
+
+
+            <div class="footer-bottom-links">
+
+                <a href="privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms of Contract Supply
+                </a>
+
+                <a href="certifications.html">
+                    BIFMA Test Certificates
+                </a>
+
+                <a href="sustainability.html">
+                    Sustainability ESG Report
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AUTOMATIC YEAR -->
+
+    <script>
+        document.getElementById("nexorYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</footer>
+
+  <!-- ===================================================================
+       MODAL: COMMERCIAL RFQ / QUOTE REQUEST MODAL
+       =================================================================== -->
+  <div id="quoteModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="rfqModalTitle">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <div style="margin-bottom: 1.5rem;">
+        <span class="section-badge"><i class="fa-solid fa-file-invoice"></i> Fast Commercial Response</span>
+        <h3 id="rfqModalTitle">Request Factory Commercial Quote</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0;">
+          Submit your project requirements for an itemized B2B volume proposal within 2 hours.
+        </p>
+      </div>
+
+      <form class="ajax-rfq-form">
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-control" required placeholder="e.g. Sarah Jenkins">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company / Architecture Firm *</label>
+            <input type="text" class="form-control" required placeholder="e.g. Perkins & Will Architects">
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label">Corporate Email Address *</label>
+            <input type="email" class="form-control" required placeholder="s.jenkins@company.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Direct Phone Number</label>
+            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label class="form-label">Selected System / Scope</label>
+            <input type="text" id="rfqProductInput" class="form-control" value="Bulk Order Procurement">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Estimated Workstation Count</label>
+            <select class="form-control">
+              <option>10 - 25 Units</option>
+              <option>26 - 75 Units</option>
+              <option>76 - 200 Units (Volume Rebate)</option>
+              <option>200+ Enterprise Units</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Project Details / Specifications</label>
+          <textarea class="form-control" placeholder="Please specify timeline, floorplan dimensions, finishes (Walnut/Oak/Laminate), or turnkey installation requirements..."></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 1rem; align-items: center;">
+          <button type="button" class="btn btn-secondary modal-dismiss">Cancel</button>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Submit Commercial RFQ
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shared Common JavaScript -->
+  <script src="common.js"></script>
+
+  <!-- Interactive Bulk Savings Calculator Script -->
+  <script>
+    function updateBulkSavings() {
+      const count = parseInt(document.getElementById('bulkCountInput')?.value, 10) || 80;
+      const grade = document.getElementById('bulkGradeInput')?.value || 'executive';
+
+      let dealerPerUnit = 1800;
+      let moduraPerUnit = 1250;
+
+      if (grade === 'standard') {
+        dealerPerUnit = 1350;
+        moduraPerUnit = 920;
+      } else if (grade === 'premium') {
+        dealerPerUnit = 2600;
+        moduraPerUnit = 1750;
+      }
+
+      // Apply volume discount to Modura unit price
+      let volumeDiscount = 0.15;
+      if (count >= 200) volumeDiscount = 0.30;
+      else if (count >= 76) volumeDiscount = 0.22;
+
+      let totalDealer = count * dealerPerUnit;
+      let discountedModuraPerUnit = moduraPerUnit * (1 - volumeDiscount);
+      let totalModura = Math.round(count * discountedModuraPerUnit);
+      let totalSavings = totalDealer - totalModura;
+
+      const dealerEl = document.getElementById('dealerPriceOutput');
+      const moduraEl = document.getElementById('moduraPriceOutput');
+      const savingsEl = document.getElementById('savingsOutput');
+
+      if (dealerEl) dealerEl.textContent = `$${totalDealer.toLocaleString()}`;
+      if (moduraEl) moduraEl.textContent = `$${totalModura.toLocaleString()}`;
+      if (savingsEl) savingsEl.textContent = `$${totalSavings.toLocaleString()}`;
+    }
+
+    ['bulkCountInput', 'bulkGradeInput'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', updateBulkSavings);
+        el.addEventListener('change', updateBulkSavings);
+      }
+    });
+  </script>
+</body>
+</html>

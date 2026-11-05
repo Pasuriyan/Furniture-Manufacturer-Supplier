@@ -1659,3 +1659,6 @@ body {
         max-width: 100%;
     }
 }
+.brand-text-group {
+    margin-left: -6px;
+}

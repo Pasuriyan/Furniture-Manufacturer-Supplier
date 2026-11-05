@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modura | Coming Soon - NeoErgo 2027 Commercial Collection</title>
+  <meta name="description" content="Get VIP early access to the Modura NeoErgo 2027 commercial office furniture collection featuring carbon-neutral materials and autonomous kinetic ergonomics.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Shared Common CSS -->
+  <link rel="stylesheet" href="common.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION (Same Color as Footer)
+       =================================================================== -->
+  <header class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo with Custom Icon -->
+        <a href="index.html" class="brand-logo" title="Modura Commercial Office Furnishings">
+          <div class="brand-icon-box">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <div class="brand-text-group">
+            <span class="brand-name">MODURA<span>.</span></span>
+            <span class="brand-sub">Contract Manufacturer</span>
+          </div>
+        </a>
+
+        <!-- Navigation Menu Links & Home Dropdown -->
+        <ul class="nav-menu">
+          <!-- Dropdown for Home 1 & Home 2 -->
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" aria-haspopup="true">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Home 1: Executive Suites</span>
+                  <span class="dropdown-desc">Corporate boardrooms & prestige workspaces</span>
+                </div>
+              </a>
+              <a href="home-agile.html" class="dropdown-link">
+                <div class="dropdown-icon"><i class="fa-solid fa-shapes"></i></div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Home 2: Agile Workspaces</span>
+                  <span class="dropdown-desc">Modular benching & acoustic team hubs</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products by Type</a>
+          </li>
+          <li class="nav-item">
+            <a href="bulk-orders.html" class="nav-link">Bulk Orders & B2B</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact & Quote</a>
+          </li>
+          <li class="nav-item">
+            <a href="coming-soon.html" class="nav-link active">2027 Line</a>
+          </li>
+        </ul>
+
+        <!-- Nav Action Buttons: RTL/LTR Icon, Dark/Light Icon, RFQ CTA -->
+        <div class="nav-actions">
+          <button id="rtlToggle" class="nav-icon-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle RTL / LTR Direction">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button id="themeToggle" class="nav-icon-btn" title="Toggle Dark / Light Theme" aria-label="Toggle Dark / Light Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="index.html" class="btn btn-primary">
+            <i class="fa-solid fa-house"></i> View Current Line
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       COMING SOON HERO SECTION
+       =================================================================== -->
+  <main style="flex: 1; padding: 5rem 0; background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);">
+    <div class="container text-center" style="max-width: 860px; margin: 0 auto; text-align: center;">
+
+      <div class="section-badge" style="background: rgba(37, 99, 235, 0.12); color: var(--color-accent); border-color: rgba(37, 99, 235, 0.25); margin-bottom: 1.5rem;">
+        <i class="fa-solid fa-sparkles"></i> World Premiere • NeoCon 2027 Exhibition
+      </div>
+
+      <h1 style="margin-bottom: 1.25rem;">The Future of Workplace Architecture is Arriving.</h1>
+      <p class="lead" style="margin-bottom: 2.5rem;">
+        Introducing the <strong>NeoErgo 2027 Collection</strong>: Autonomous kinematic sit-stand benching, 100% circular recycled ocean-bound materials, and silent touch-free micro-acoustic pods.
+      </p>
+
+      <!-- Live Countdown Box -->
+      <div class="card" style="padding: 2.5rem; margin-bottom: 3rem; box-shadow: var(--shadow-xl);">
+        <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-primary); margin-bottom: 1.25rem;">
+          Official Commercial Launch Countdown
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem 1.75rem; min-width: 100px;">
+            <div id="csDays" style="font-size: 2.75rem; font-weight: 800; color: var(--color-primary); line-height: 1;">42</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-top: 0.25rem;">Days</div>
+          </div>
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem 1.75rem; min-width: 100px;">
+            <div id="csHours" style="font-size: 2.75rem; font-weight: 800; color: var(--color-primary); line-height: 1;">16</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-top: 0.25rem;">Hours</div>
+          </div>
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem 1.75rem; min-width: 100px;">
+            <div id="csMinutes" style="font-size: 2.75rem; font-weight: 800; color: var(--color-primary); line-height: 1;">38</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-top: 0.25rem;">Minutes</div>
+          </div>
+          <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem 1.75rem; min-width: 100px;">
+            <div id="csSeconds" style="font-size: 2.75rem; font-weight: 800; color: var(--color-primary); line-height: 1;">50</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); margin-top: 0.25rem;">Seconds</div>
+          </div>
+        </div>
+
+        <!-- VIP Early Access Subscription -->
+        <div style="max-width: 520px; margin: 2rem auto 0 auto;">
+          <h4 style="margin-bottom: 0.5rem;">Join Architect & Specifier VIP Early Access</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Be the first to receive 3D Revit models, advance trade pricing schedules, and an invitation to our private launch event.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <input type="email" class="form-control" placeholder="Enter corporate email..." required style="flex: 1; min-width: 240px;">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-bell"></i> Notify Me First
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sneak Peek Features Grid -->
+      <div class="grid-3" style="text-align: left; margin-bottom: 3.5rem;">
+        <div class="card">
+          <div style="font-size: 1.75rem; color: var(--color-primary); margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h4>Autonomous Ergonomics</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Subtle millimeter micro-adjustments throughout the day automatically mitigate fatigue and stimulate circulation without distracting concentration.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 1.75rem; color: var(--color-success); margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h4>100% Ocean-Bound Circularity</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Zero-landfill construction. Fabricated exclusively from reclaimed marine plastics, bio-resins, and infinitely recyclable forged aluminum.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size: 1.75rem; color: var(--color-accent); margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <h4>Next-Gen Qi2 Wireless</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">Under-desk invisible inductive magnetic coils charge laptops up to 100W directly through 30mm solid hardwood worktops with zero drilled cutouts.</p>
+        </div>
+      </div>
+
+      <!-- Action Navigation -->
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="products.html" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-layer-group"></i> Browse Active 2026 Products
+        </a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">
+          <i class="fa-solid fa-envelope"></i> Contact Commercial Sales
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER (Exact Same Colour as Navbar: --nav-footer-bg)
+       =================================================================== -->
+  <footer class="footer-wrapper">
+    <div class="container footer-top" style="padding: 3rem 0 2rem 0;">
+      <div class="footer-grid">
+        <!-- Footer Column 1: Brand Logo & About -->
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" title="Modura Office Systems">
+            <div class="brand-icon-box">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <div class="brand-text-group">
+              <span class="brand-name">MODURA<span>.</span></span>
+              <span class="brand-sub">Contract Manufacturer</span>
+            </div>
+          </a>
+          <p>
+            Global designer, manufacturer, and contract supplier of heavy-duty executive office furniture, modular workstation systems, and acoustic architectural hubs.
+          </p>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home 1: Executive Suites</a></li>
+            <li><a href="home-agile.html"><i class="fa-solid fa-angle-right"></i> Home 2: Agile Workspaces</a></li>
+            <li><a href="products.html"><i class="fa-solid fa-angle-right"></i> Products by Type</a></li>
+            <li><a href="bulk-orders.html"><i class="fa-solid fa-angle-right"></i> Bulk Orders & B2B</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Contact Channels -->
+        <div>
+          <h4 class="footer-title">Immediate Help</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Department Desk</a></li>
+            <li><a href="maintenance.html"><i class="fa-solid fa-angle-right"></i> Maintenance Mode</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Factory Status -->
+        <div>
+          <h4 class="footer-title">World Premiere</h4>
+          <div style="font-size: 0.85rem; color: var(--nav-footer-subtext); margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-location-dot" style="color: var(--color-primary);"></i> The Merchandise Mart, Chicago
+          </div>
+          <div style="font-size: 0.85rem; color: var(--nav-footer-subtext);">
+            <i class="fa-solid fa-calendar-days" style="color: var(--color-primary);"></i> NeoCon Exhibition 2027
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Strip -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          &copy; <span id="currentYear">2026</span> Modura Commercial Office Systems Inc. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Press Kit</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Common JavaScript -->
+  <script src="common.js"></script>
+
+  <!-- Live Countdown Timer Simulation -->
+  <script>
+    let d = 42, h = 16, m = 38, s = 50;
+    const dEl = document.getElementById('csDays');
+    const hEl = document.getElementById('csHours');
+    const mEl = document.getElementById('csMinutes');
+    const sEl = document.getElementById('csSeconds');
+
+    setInterval(() => {
+      if (s > 0) {
+        s--;
+      } else {
+        s = 59;
+        if (m > 0) {
+          m--;
+        } else {
+          m = 59;
+          if (h > 0) {
+            h--;
+          } else {
+            h = 23;
+            if (d > 0) d--;
+          }
+        }
+      }
+
+      if (dEl) dEl.textContent = String(d).padStart(2, '0');
+      if (hEl) hEl.textContent = String(h).padStart(2, '0');
+      if (mEl) mEl.textContent = String(m).padStart(2, '0');
+      if (sEl) sEl.textContent = String(s).padStart(2, '0');
+    }, 1000);
+  </script>
+</body>
+</html>

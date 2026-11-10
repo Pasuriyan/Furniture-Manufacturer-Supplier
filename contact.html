@@ -20,13 +20,30 @@
     <div class="container">
       <nav class="navbar" aria-label="Main Navigation">
         <!-- Brand Logo with Circular Icon Badge (Matching Reference) -->
-            <a href="index.html" class="navbar-brand">
-    <img src="assets/images/logo.png" alt="NEXOR Logo" class="site-logo">
-</a>
-           <a href="index.html" class="brand-text-group text-decoration-none">
-    <span class="brand-name">NEXOR<span></span></span>
-    <span class="brand-sub">Contract Manufacturer</span>
-</a>
+           <div style="display: flex; align-items: center; gap: 12px;">
+
+    <a href="index.html" class="navbar-brand"
+       style="margin: 0; padding: 0;">
+        <img src="assets/images/logo.png"
+             alt="NEXOR Logo"
+             class="site-logo"
+             style="width: 75px; height: 65px; object-fit: contain; display: block;">
+    </a>
+
+    <a href="index.html" class="brand-text-group text-decoration-none"
+       style="display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 0; gap: 3px;">
+
+        <span class="brand-name" style="margin: 0; line-height: 1;">
+            NEXOR
+        </span>
+
+        <span class="brand-sub" style="margin: 0; line-height: 1.2;">
+            Contract Manufacturer
+        </span>
+
+    </a>
+
+</div>
 
         <!-- Navigation Menu Links & Home Dropdown -->
         <ul class="nav-menu">
@@ -53,11 +70,14 @@
               </a>
             </div>
           </li>
+           <li class="nav-item">
+              <a href="about.html" class="nav-link">About </a>
+            </li>
           <li class="nav-item">
             <a href="products.html" class="nav-link">Products</a>
           </li>
           <li class="nav-item">
-            <a href="bulk-orders.html" class="nav-link">Bulk Orders & B2B</a>
+            <a href="bulk-orders.html" class="nav-link">Bulk Orders</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link active">Contact</a>
@@ -125,7 +145,128 @@
       </div>
     </div>
   </section>
+ <section class="section section-alt" id="quote-form-section">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <div class="section-badge"><i class="fa-solid fa-calculator"></i> Itemized B2B Proposal</div>
+          <h2>Request Detailed Factory Commercial Quotation</h2>
+          <p class="lead">
+            Fill out the form with your project criteria. You will receive an official PDF contract quote with itemized tiered volume discounts, freight options, and CAD space planning confirmation.
+          </p>
+          
+          <div style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1.25rem;">
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <h5 style="margin-bottom: 0.25rem;">Official Manufacturer Quotation</h5>
+                <p style="font-size: 0.85rem; margin-bottom: 0;">Guaranteed factory direct pricing valid for 60 calendar days from issuance date.</p>
+              </div>
+            </div>
 
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+              <div>
+                <h5 style="margin-bottom: 0.25rem;">Free 2D/3D Test-Fit Drawings</h5>
+                <p style="font-size: 0.85rem; margin-bottom: 0;">Include your floorplan or dimensions to receive complementary layout plans.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div>
+                <h5 style="margin-bottom: 0.25rem;">Assigned Commercial Space Engineer</h5>
+                <p style="font-size: 0.85rem; margin-bottom: 0;">A single dedicated point of contact handles technical specs, factory build updates, and delivery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Quote Request Form -->
+        <div class="card" style="padding: 2.5rem;">
+          <form class="ajax-rfq-form">
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" required placeholder="e.g. Christine Adams">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Organization / Firm *</label>
+                <input type="text" class="form-control" required placeholder="e.g. Adams Architecture LLP">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Work Email *</label>
+                <input type="email" class="form-control" required placeholder="c.adams@firm.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Contact Phone</label>
+                <input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Primary Product Interest</label>
+                <select class="form-control">
+                  <option>Executive Desks & Boardrooms</option>
+                  <option>Modular Sit-Stand Benchings</option>
+                  <option>Ergonomic Mesh Task Chairs</option>
+                  <option>Acoustic Privacy Pods</option>
+                  <option>Complete Office Fitout Package</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Estimated Workstations / Headcount</label>
+                <select class="form-control">
+                  <option>10 – 25 Workstations</option>
+                  <option>26 – 75 Workstations</option>
+                  <option>76 – 200 Workstations (Enterprise Tier)</option>
+                  <option>200+ Campus Master Supply</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Installation Site City / State</label>
+                <input type="text" class="form-control" placeholder="e.g. Dallas, TX">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Target Completion Timeline</label>
+                <select class="form-control">
+                  <option>Fast-Ship (Under 3 Weeks)</option>
+                  <option>Within 60 Days</option>
+                  <option>3 – 6 Months</option>
+                  <option>Budgeting Phase</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Project Scope & Blueprint Notes</label>
+              <textarea class="form-control" placeholder="Describe finishes desired, ceiling heights, loading dock restrictions, or specific BIFMA/LEED requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Request for Quote
+            </button>
+            <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">
+              Your information is safeguarded under corporate privacy standards. No sales spam.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- ===================================================================
        SECTION 2: GLOBAL SHOWROOMS & FACTORY HUBS CARDS
        =================================================================== -->
@@ -685,128 +826,7 @@ function showLocation(location, button) {
   <!-- ===================================================================
        SECTION 3: PRIMARY COMMERCIAL QUOTE & RFQ FORM
        =================================================================== -->
-  <section class="section section-alt" id="quote-form-section">
-    <div class="container">
-      <div class="grid-2">
-        <div>
-          <div class="section-badge"><i class="fa-solid fa-calculator"></i> Itemized B2B Proposal</div>
-          <h2>Request Detailed Factory Commercial Quotation</h2>
-          <p class="lead">
-            Fill out the form with your project criteria. You will receive an official PDF contract quote with itemized tiered volume discounts, freight options, and CAD space planning confirmation.
-          </p>
-          
-          <div style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1.25rem;">
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div style="width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <i class="fa-solid fa-certificate"></i>
-              </div>
-              <div>
-                <h5 style="margin-bottom: 0.25rem;">Official Manufacturer Quotation</h5>
-                <p style="font-size: 0.85rem; margin-bottom: 0;">Guaranteed factory direct pricing valid for 60 calendar days from issuance date.</p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div style="width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <i class="fa-solid fa-pen-ruler"></i>
-              </div>
-              <div>
-                <h5 style="margin-bottom: 0.25rem;">Free 2D/3D Test-Fit Drawings</h5>
-                <p style="font-size: 0.85rem; margin-bottom: 0;">Include your floorplan or dimensions to receive complementary layout plans.</p>
-              </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div style="width: 40px; height: 40px; border-radius: var(--radius-sm); background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
-              <div>
-                <h5 style="margin-bottom: 0.25rem;">Assigned Commercial Space Engineer</h5>
-                <p style="font-size: 0.85rem; margin-bottom: 0;">A single dedicated point of contact handles technical specs, factory build updates, and delivery.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- The Quote Request Form -->
-        <div class="card" style="padding: 2.5rem;">
-          <form class="ajax-rfq-form">
-            <div class="grid-2">
-              <div class="form-group">
-                <label class="form-label">Full Name *</label>
-                <input type="text" class="form-control" required placeholder="e.g. Christine Adams">
-              </div>
-              <div class="form-group">
-                <label class="form-label">Organization / Firm *</label>
-                <input type="text" class="form-control" required placeholder="e.g. Adams Architecture LLP">
-              </div>
-            </div>
-
-            <div class="grid-2">
-              <div class="form-group">
-                <label class="form-label">Work Email *</label>
-                <input type="email" class="form-control" required placeholder="c.adams@firm.com">
-              </div>
-              <div class="form-group">
-                <label class="form-label">Contact Phone</label>
-                <input type="tel" class="form-control" placeholder="+1 (555) 000-0000">
-              </div>
-            </div>
-
-            <div class="grid-2">
-              <div class="form-group">
-                <label class="form-label">Primary Product Interest</label>
-                <select class="form-control">
-                  <option>Executive Desks & Boardrooms</option>
-                  <option>Modular Sit-Stand Benchings</option>
-                  <option>Ergonomic Mesh Task Chairs</option>
-                  <option>Acoustic Privacy Pods</option>
-                  <option>Complete Office Fitout Package</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label">Estimated Workstations / Headcount</label>
-                <select class="form-control">
-                  <option>10 – 25 Workstations</option>
-                  <option>26 – 75 Workstations</option>
-                  <option>76 – 200 Workstations (Enterprise Tier)</option>
-                  <option>200+ Campus Master Supply</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="grid-2">
-              <div class="form-group">
-                <label class="form-label">Installation Site City / State</label>
-                <input type="text" class="form-control" placeholder="e.g. Dallas, TX">
-              </div>
-              <div class="form-group">
-                <label class="form-label">Target Completion Timeline</label>
-                <select class="form-control">
-                  <option>Fast-Ship (Under 3 Weeks)</option>
-                  <option>Within 60 Days</option>
-                  <option>3 – 6 Months</option>
-                  <option>Budgeting Phase</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label">Project Scope & Blueprint Notes</label>
-              <textarea class="form-control" placeholder="Describe finishes desired, ceiling heights, loading dock restrictions, or specific BIFMA/LEED requirements..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-              <i class="fa-solid fa-paper-plane"></i> Request for Quote
-            </button>
-            <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">
-              Your information is safeguarded under corporate privacy standards. No sales spam.
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+ 
 
   <!-- ===================================================================
        SECTION 4: DIRECT DEPARTMENTAL DIRECTORY
@@ -854,7 +874,7 @@ function showLocation(location, button) {
   <!-- ===================================================================
        SECTION 5: INTERACTIVE SHOWROOM LOCATOR & VISUAL MAP
        =================================================================== -->
-  <section class="section section-alt" id="showroom-map">
+ <section class="section section-alt" id="showroom-map">
     <div class="container">
       <div class="section-header">
         <div class="section-badge"><i class="fa-solid fa-map-location-dot"></i> Interactive Map</div>
@@ -864,12 +884,14 @@ function showLocation(location, button) {
 
       <div class="card" style="padding: 2rem;">
         <!-- Tabs for Locations -->
-        <div style="display: flex; gap: 0.75rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;" id="mapLocationTabs">
-          <button class="btn btn-sm btn-primary map-tab active" data-city="chicago">Chicago (HQ & Plant)</button>
-          <button class="btn btn-sm btn-secondary map-tab" data-city="newyork">New York City</button>
-          <button class="btn btn-sm btn-secondary map-tab" data-city="london">London (Clerkenwell)</button>
-          <button class="btn btn-sm btn-secondary map-tab" data-city="singapore">Singapore (Marina Bay)</button>
-        </div>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 0.75rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;" id="mapLocationTabs">
+
+  <button class="btn btn-sm btn-primary map-tab active" data-city="chicago">Chicago (HQ & Plant)</button>
+  <button class="btn btn-sm btn-secondary map-tab" data-city="newyork">New York City</button>
+  <button class="btn btn-sm btn-secondary map-tab" data-city="london">London (Clerkenwell)</button>
+  <button class="btn btn-sm btn-secondary map-tab" data-city="singapore">Singapore (Marina Bay)</button>
+
+</div>
 
         <!-- Interactive Representation -->
         <div class="grid-2" style="align-items: center;">
@@ -899,7 +921,6 @@ function showLocation(location, button) {
       </div>
     </div>
   </section>
-
   <!-- ===================================================================
        SECTION 6: PRIVATE 1-ON-1 SHOWROOM OR VIRTUAL VIDEO BOOKING
        =================================================================== -->
@@ -962,56 +983,78 @@ function showLocation(location, button) {
        SECTION 7: SPECIFIER, ARCHITECT & CONTRACTOR FAQ ACCORDION
        =================================================================== -->
   <section class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge"><i class="fa-solid fa-circle-question"></i> Contractor FAQs</div>
-        <h2>Frequently Asked Commercial Questions</h2>
-        <p class="lead">Answers to common logistical, architectural, and contract manufacturing inquiries.</p>
+  <div class="container">
+
+    <div class="section-header">
+      <div class="section-badge">
+        <i class="fa-solid fa-circle-question"></i> Contractor FAQs
       </div>
-
-      <div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
-        <!-- FAQ 1 -->
-        <div class="card" style="padding: 1.5rem;">
-          <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);"><i class="fa-solid fa-circle-dot" style="font-size: 0.8rem;"></i> What are standard factory production lead times?</h4>
-          <p style="font-size: 0.92rem; margin-bottom: 0;">
-            Our in-stock <strong>Fast-Ship Express</strong> lines dispatch within 48 to 72 hours from regional fulfillment warehouses. Custom architectural veneers and tailored dimensional benching runs require 3 to 5 weeks from approved shop drawings.
-          </p>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="card" style="padding: 1.5rem;">
-          <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);"><i class="fa-solid fa-circle-dot" style="font-size: 0.8rem;"></i> Do Modura products meet ANSI/BIFMA and LEED requirements?</h4>
-          <p style="font-size: 0.92rem; margin-bottom: 0;">
-            Yes. 100% of our desking, task seating, and storage products are independently certified to ANSI/BIFMA X5.5, X5.1, and X5.9 standards. All wooden cores are FSC-certified and emit zero formaldehyde, contributing directly to LEED v4.1 credits.
-          </p>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="card" style="padding: 1.5rem;">
-          <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);"><i class="fa-solid fa-circle-dot" style="font-size: 0.8rem;"></i> Can we provide Customer's Own Material (COM) fabrics?</h4>
-          <p style="font-size: 0.92rem; margin-bottom: 0;">
-            Yes. We regularly accept approved COM textiles from Maharam, Kvadrat, Gabriel, and Designtex for our upholstered acoustic screens and ergonomic task seating backrests.
-          </p>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="card" style="padding: 1.5rem;">
-          <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);"><i class="fa-solid fa-circle-dot" style="font-size: 0.8rem;"></i> How does white-glove union installation work?</h4>
-          <p style="font-size: 0.92rem; margin-bottom: 0;">
-            Our certified union assembly technicians coordinate loading dock times with your property manager, stage materials floor-by-floor, assemble desks and cable spines, complete electrical continuity tests, and remove 100% of packaging refuse.
-          </p>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="card" style="padding: 1.5rem;">
-          <h4 style="margin-bottom: 0.5rem; color: var(--color-primary);"><i class="fa-solid fa-circle-dot" style="font-size: 0.8rem;"></i> What is covered under the 12-Year Commercial Master Warranty?</h4>
-          <p style="font-size: 0.92rem; margin-bottom: 0;">
-            Our warranty covers all structural steel frames, welds, linear actuators, motor control boxes, and gas cylinders. In the rare event of a component failure, replacement parts are dispatched within 48 hours with on-site technician service.
-          </p>
-        </div>
-      </div>
+      <h2>Frequently Asked Commercial Questions</h2>
+      <p class="lead">
+        Answers to common logistical, architectural, and contract manufacturing inquiries.
+      </p>
     </div>
-  </section>
+
+    <div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+
+      <!-- FAQ 1 -->
+      <details class="card faq-dropdown">
+        <summary>
+          What are standard factory production lead times?
+          <i class="fa-solid fa-chevron-down faq-arrow"></i>
+        </summary>
+        <div class="faq-answer">
+          Our in-stock <strong>Fast-Ship Express</strong> lines dispatch within 48 to 72 hours from regional fulfillment warehouses. Custom architectural veneers and tailored dimensional benching runs require 3 to 5 weeks from approved shop drawings.
+        </div>
+      </details>
+
+      <!-- FAQ 2 -->
+      <details class="card faq-dropdown">
+        <summary>
+          Do Modura products meet ANSI/BIFMA and LEED requirements?
+          <i class="fa-solid fa-chevron-down faq-arrow"></i>
+        </summary>
+        <div class="faq-answer">
+          Yes. 100% of our desking, task seating, and storage products are independently certified to ANSI/BIFMA X5.5, X5.1, and X5.9 standards. All wooden cores are FSC-certified and emit zero formaldehyde, contributing directly to LEED v4.1 credits.
+        </div>
+      </details>
+
+      <!-- FAQ 3 -->
+      <details class="card faq-dropdown">
+        <summary>
+          Can we provide Customer's Own Material (COM) fabrics?
+          <i class="fa-solid fa-chevron-down faq-arrow"></i>
+        </summary>
+        <div class="faq-answer">
+          Yes. We regularly accept approved COM textiles from Maharam, Kvadrat, Gabriel, and Designtex for our upholstered acoustic screens and ergonomic task seating backrests.
+        </div>
+      </details>
+
+      <!-- FAQ 4 -->
+      <details class="card faq-dropdown">
+        <summary>
+          How does white-glove union installation work?
+          <i class="fa-solid fa-chevron-down faq-arrow"></i>
+        </summary>
+        <div class="faq-answer">
+          Our certified union assembly technicians coordinate loading dock times with your property manager, stage materials floor-by-floor, assemble desks and cable spines, complete electrical continuity tests, and remove 100% of packaging refuse.
+        </div>
+      </details>
+
+      <!-- FAQ 5 -->
+      <details class="card faq-dropdown">
+        <summary>
+          What is covered under the 12-Year Commercial Master Warranty?
+          <i class="fa-solid fa-chevron-down faq-arrow"></i>
+        </summary>
+        <div class="faq-answer">
+          Our warranty covers all structural steel frames, welds, linear actuators, motor control boxes, and gas cylinders. In the rare event of a component failure, replacement parts are dispatched within 48 hours with on-site technician service.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
 
   <!-- ===================================================================
        SECTION 8: RAPID SPARE PARTS & FIELD SERVICE DESK
@@ -1030,22 +1073,38 @@ function showLocation(location, button) {
           </div>
         </div>
 
-        <div class="card" style="padding: 2rem;">
-          <h4 style="margin-bottom: 0.75rem;">Parts or Warranty Claim Request</h4>
-          <form class="ajax-rfq-form">
-            <div class="form-group">
-              <label class="form-label">Workstation Serial / SKU Number:</label>
-              <input type="text" class="form-control" placeholder="e.g. MOD-WS-404-CH">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Company Name & Address:</label>
-              <input type="text" class="form-control" placeholder="Installation location">
-            </div>
-            <button type="submit" class="btn btn-secondary" style="width: 100%;">
-            Submit 
-            </button>
-          </form>
-        </div>
+     <div class="card" style="padding: 1.5rem; max-width: 600px;">
+
+  <h4 style="margin-bottom: 0.75rem; font-size: 17px;">
+    Parts or Warranty Claim Request
+  </h4>
+
+  <form class="ajax-rfq-form">
+
+    <div class="form-group">
+      <label class="form-label" style="font-size: 13px;">
+        Workstation Serial / SKU Number:
+      </label>
+      <input type="text" class="form-control"
+        placeholder="e.g. MOD-WS-404-CH"
+        style="height: 38px; font-size: 13px; padding: 8px 12px;">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" style="font-size: 13px;">
+        Company Name & Address:
+      </label>
+      <input type="text" class="form-control"
+        placeholder="Installation location"
+        style="height: 38px; font-size: 13px; padding: 8px 12px;">
+    </div>
+
+    <button type="submit" class="btn btn-secondary warranty-submit">
+    Submit
+</button>
+
+  </form>
+</div>
       </div>
     </div>
   </section>
@@ -1076,12 +1135,7 @@ function showLocation(location, button) {
   <!-- ===================================================================
        FOOTER (Exact Same Colour as Navbar: --nav-footer-bg)
        =================================================================== -->
- <!-- Font Awesome Icons -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-<footer class="nexor-footer">
+       <footer class="nexor-footer">
 
     <style>
         /* ==============================
@@ -1470,25 +1524,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             <!-- COLUMN 1: BRAND -->
             <div class="footer-about">
 
-                <a href="index.html"
-                   class="brand-logo"
-                   title="NEXOR Contract Manufacturer">
+                 <div style="display: flex; align-items: center; gap: 12px;">
 
-                    <img src="assets/images/logo.png"
-                         alt="NEXOR Logo"
-                         class="footer-brand-logo">
+    <a href="index.html" class="navbar-brand"
+       style="margin: 0; padding: 0;">
+        <img src="assets/images/logo.png"
+             alt="NEXOR Logo"
+             class="site-logo"
+             style="width: 75px; height: 65px; object-fit: contain; display: block;">
+    </a>
 
-                    <div class="brand-text-group">
+    <a href="index.html" class="brand-text-group text-decoration-none"
+       style="display: flex; flex-direction: column; justify-content: center; margin: 0; padding: 0; gap: 3px;">
 
-                        <span class="brand-name">NEXOR</span>
+        <span class="brand-name" style="margin: 0; line-height: 1;">
+            NEXOR
+        </span>
 
-                        <span class="brand-sub">
-                            CONTRACT MANUFACTURER
-                        </span>
+        <span class="brand-sub" style="margin: 0; line-height: 1.2;">
+            Contract Manufacturer
+        </span>
 
-                    </div>
+    </a>
 
-                </a>
+</div>
 
 
                 <p>
@@ -1604,7 +1663,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                         </a>
                     </li>
 
-                   
 
                 </ul>
 
@@ -1652,7 +1710,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
                             Reception Desks
                         </a>
                     </li>
-                
+                 
 
                 </ul>
 
@@ -1788,6 +1846,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     </script>
 
 </footer>
+ <!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
 
   <!-- ===================================================================
        MODAL: COMMERCIAL RFQ / QUOTE REQUEST MODAL

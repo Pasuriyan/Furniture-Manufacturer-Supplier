@@ -314,3 +314,59 @@ function initAutoYear() {
     yearEl.textContent = new Date().getFullYear();
   }
 }
+/* ===================================================================
+   ANIMATED STAT COUNTERS ENGINE (FOR ABOUT PAGE METRICS)
+   =================================================================== */
+function initStatCounters() {
+  const counters = document.querySelectorAll('.counter-value');
+  if (!counters.length) return;
+
+  const observerOptions = {
+    threshold: 0.35,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        animateNumber(el);
+        observer.unobserve(el);
+      }
+    });
+  }, observerOptions);
+
+  counters.forEach(counter => counterObserver.observe(counter));
+
+  function animateNumber(element) {
+    const rawTarget = element.getAttribute('data-target') || '0';
+    const isDecimal = rawTarget.includes('.');
+    const target = parseFloat(rawTarget.replace(/,/g, ''));
+    const duration = 2000;
+    const frameRate = 30;
+    const totalFrames = Math.round((duration / 1000) * frameRate);
+    let frame = 0;
+
+    const timer = setInterval(() => {
+      frame++;
+      // Ease out cubic calculation
+      const progress = 1 - Math.pow(1 - (frame / totalFrames), 3);
+      const current = target * progress;
+
+      if (isDecimal) {
+        element.textContent = current.toFixed(1);
+      } else {
+        element.textContent = Math.round(current).toLocaleString();
+      }
+
+      if (frame >= totalFrames) {
+        clearInterval(timer);
+        if (isDecimal) {
+          element.textContent = target.toFixed(1);
+        } else {
+          element.textContent = Math.round(target).toLocaleString();
+        }
+      }
+    }, 1000 / frameRate);
+  }
+}
